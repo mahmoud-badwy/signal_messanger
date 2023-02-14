@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:signal_messanger/screens/home_screen.dart';
+import 'package:signal_messanger/screens/registeration.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,6 +17,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const HomeScreen(),
+      routes: {
+        HomeScreen.routename: (context) => const HomeScreen(),
+        RegistrationScreen.routename: (context) => const RegistrationScreen(),
+      },
     );
   }
 }
